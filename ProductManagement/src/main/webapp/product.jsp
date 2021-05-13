@@ -53,13 +53,7 @@
 
 <div id="alertSuccess" class="alert alert-success"></div>
 <div id="alertError" class="alert alert-danger"></div>
-
-<%
- out.print(session.getAttribute("statusMsg"));
-%>
-
-<br>
-
+<br><br>
 <div id="divProductsGrid">
  <%
 Product productObj = new Product(); 
