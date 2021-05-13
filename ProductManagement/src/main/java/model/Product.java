@@ -63,7 +63,7 @@ public class Product {
 	        } 
 	        catch (Exception e) 
 	        { 
-	        	output = "{\"status\":\"error\", \"data\": \"Error while inserting the product\"}"; 
+	        	output = "{\"status\":\"error\", \"data\": \"Error while inserting the product.\"}"; 
 	        	System.err.println(e.getMessage()); 
 	        } 
 	        return output; 
@@ -108,8 +108,7 @@ public class Product {
 	            
 	            // Add into the html table
 	
-	            output += "<tr><td><input id='hidProductIDUpdate' name='hidProductIDUpdate' type='hidden' value='" + PID + "'>"
-	            		 + productname + "</td>";
+	            output += "<tr><td>" + productname + "</td>";
 	            output += "<td>" + productcode + "</td>";
 	            output += "<td>" + productquantity + "</td>";
 	            output += "<td>" + productdescription + "</td>";
